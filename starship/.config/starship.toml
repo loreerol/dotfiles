@@ -1,0 +1,43 @@
+# ~/.config/starship.toml
+add_newline = false
+
+# Character (Prompt Symbol)
+[character]
+success_symbol = "[⊱](bold light-green)"
+
+# Directory (Show Current Path)
+[directory]
+disabled = true
+
+[git_branch]
+symbol = "˖⚘₊ ⊹" 
+style = "purple bold"
+format = "[$symbol $branch]($style) " 
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+style = "yellow bold"
+
+[package]
+disabled = true
+
+[hostname]
+ssh_only = true
+
+[python]
+symbol = "✧˖°🐚✩°｡"
+style = "green bold"
+format = "[${virtualenv}$symbol]($style) "
+python_binary = ["python3", "python"] 
+disabled = false
+
+[nodejs]
+symbol = "˚.⋆☾⁺₊"
+format = "[$version$symbol]($style) "
+style = "green bold"
+disabled = false
+
+[cmd_duration]
+min_time = 1000
+format = "[$duration](bold bright-green)"
+
