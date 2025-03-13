@@ -23,7 +23,6 @@ install_plugin() {
 # Install plugins
 install_plugin "zsh-autosuggestions" "https://github.com/zsh-users/zsh-autosuggestions"
 install_plugin "zsh-syntax-highlighting" "https://github.com/zsh-users/zsh-syntax-highlighting"
-install_plugin "zsh-autocomplete" "https://github.com/marlonrichert/zsh-autocomplete"
 
 # Ensure ~/.zsh_plugins.sh is sourced in ~/.zshrc
 if ! grep -q "source ~/.zsh_plugins.sh" ~/.zshrc; then

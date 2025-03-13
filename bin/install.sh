@@ -9,12 +9,14 @@ set -e
 sudo apt update
 sudo apt upgrade -y
 
-# Make sure snap is installed
-sudo apt install -y snapd
-
 ######################################################
 # Install the things
 ######################################################
+
+# Make sure snap is installed
+echo "Installing snap..."
+sudo apt install -y snapd
+echo "Installed snap!"
 
 # DBeaver 
 echo "Installing DBeaver..."
@@ -47,28 +49,39 @@ sudo snap install slack --classic
 echo "Installed Slack!"
 
 # Zoom
+echo "Installing Zoom..."
 sudo snap install zoom-client
+echo "Installed Zoom!"
 
 # Terminator
+echo "Installing Terminator..."
 sudo apt install -y terminator
+echo "Installed Terminator!"
 
 # Spaceship for termnial
+echo "Installing Spaceship..."
 curl -fsSL https://starship.rs/install.sh | sh -s -- -y
+echo "Installed Spaceship!"
 
 # Librewolf
+echo "Installing Librewolf..."
 wget https://deb.librewolf.net/keyring.gpg
 sudo gpg --dearmor --yes -o /usr/share/keyrings/librewolf.gpg keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/librewolf.gpg] http://deb.librewolf.net $(lsb_release -cs) main" | \
 sudo tee /etc/apt/sources.list.d/librewolf.list
 sudo apt install -y librewolf
+echo "Installed Librewolf!"
 
 # stow
+echo "Installing Stow..."
 sudo apt install stow -y
+echo "Installed Stow!"
 
 ######################################################
 # Tidy up
 ######################################################
+echo "Tidying up..."
 sudo apt autoremove -y
 rm -f keyring.gpg
 
-echo "You did it!"
+echo "Great Success!"
