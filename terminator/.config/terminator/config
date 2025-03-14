@@ -23,7 +23,7 @@
     cursor_color_fg = False
     font = Fira Code weight=453 12
     foreground_color = "#82ffac"
-    palette = "#212121:#e41424:#55a087:#cfb784:#65d7fd:#ce839d:#67d1a7:#f1f1ee:#353535:#e04f5b:#82ffac:#e1d0aa:#65d7fd:#ca98aa:#82ffcd:#f2f2f0"
+    palette = "#212121:#e41424:#55a087:#65d7fd:#ffd402:#ce839d:#da70d6:#f1f1ee:#353535:#e04f5b:#82ffac:#ffe251:#65d7fd:#ca98aa:#82ffcd:#f2f2f0"
     use_system_font = False
 [layouts]
   [[default]]

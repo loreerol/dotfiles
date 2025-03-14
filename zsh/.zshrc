@@ -33,7 +33,7 @@ setopt HIST_REDUCE_BLANKS        # Remove extra spaces from commands
 # set titlebar title to current directory
 autoload -Uz add-zsh-hook
 function set-terminal-title() {
-  print -Pn "\e]2;%~\a"
+  print -Pn "\e]0;${PWD##*/}\a"
 }
 add-zsh-hook precmd set-terminal-title
 
