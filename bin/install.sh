@@ -35,7 +35,7 @@ echo "Installed Postman!"
 
 # Obsidian
 echo "Installing Obsidian..."
-sudo snap install obsidian
+sudo snap install obsidian --classic
 echo "Installed Obsidian!"
 
 # Spotify

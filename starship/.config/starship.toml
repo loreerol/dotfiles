@@ -16,7 +16,18 @@ style = "purple bold"
 format = "[$symbol $branch]($style)" 
 
 [git_status]
-format = '([\[$all_status$ahead_behind\]]($style) )'
+# format = '([\[$all_status$ahead_behind\]]($style) )'
+format = '( $all_status($style))'
+ahead = "🌒${count}"
+behind = "🌘${count}"
+diverged = "🌓${ahead_count}⇡ ${behind_count}⇣"
+untracked = "🌑"
+stashed = "🌔"
+staged = "🌖"
+deleted = "🌚"
+conflicted = "🌝"
+modified = "🌕"
+
 style = "yellow bold"
 
 [package]
